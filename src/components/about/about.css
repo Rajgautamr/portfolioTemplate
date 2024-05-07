@@ -1,0 +1,38 @@
+.about{
+    padding: 0% 10%;
+    font-family: 'Poppins';
+}
+.about h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+.about h3{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.about p{
+    font-size: 16px;
+    font-family: 'Poppins';
+    text-align: left;
+    color: var(--secondary-color);
+}
+.about h1{
+    margin-top: .6rem;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 72px;
+    color: var(--primary-color);
+}
+.exp{
+    display: grid;
+    grid-template-columns:  20% 70%;
+}
+.text{
+    padding-top: 2rem;
+    font-size: 16px;
+    color:var(--secondary-color);
+    
+}

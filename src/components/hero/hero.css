@@ -1,0 +1,267 @@
+
+.hero{
+  background-color: var(--background-color);
+ padding: 0% 10%;
+}
+.container {
+  background-color: var(--background-color);
+    font-family: 'Gabarito', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    padding: 5% 2%; 
+}
+
+.column {
+    
+    flex: 50%;
+    margin-top: 4rem;
+    padding: 20px;
+}
+.column1{
+    flex: 50%;
+    margin-top: .6rem ;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: 'Poppins';
+    color: var(--secondary-color);
+    font-size: 52px;
+}
+ .column p{
+  font-family: 'Poppins';
+    color: var(--secondary-color);
+    text-align: start;
+    font-size: 32px;
+    padding-top: 20%;
+    
+    
+ }
+ .column h3{
+  font-family: 'Poppins';
+    color: var(--secondary-color);
+    font-weight: 300;
+    padding-top:2.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 18px;
+ }
+
+.column1 img{
+  background-color: var(--primary-color);
+  padding: 0%;
+    width: auto;
+    height: 100%;
+    border-radius: 200px 0 180px 0;
+    
+}
+.share {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  transition: .4s ease-in-out;
+  margin-top: 8rem;
+}
+
+.btn1 {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn1 .instagram {
+  margin-top: 0.1em;
+  fill: #cc39a4;
+}
+
+.btn1 .tooltiptext1 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn1 .tooltiptext1 .card {
+  width: 4em;
+  height: 4em;
+  background-color: white;
+}
+
+.btn1 .tooltiptext1 .account {
+  margin-top: 1em;
+}
+
+.btn1 .tooltiptext1 .username {
+  font-size: 0.7em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn1:hover .tooltiptext1 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn1:hover {
+  background-color: #cc39a4;
+}
+
+.btn1:hover .instagram {
+  fill: white;
+}
+
+.btn2 {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn2 .twitter {
+  margin-top: .25em;
+  margin-left: .1em;
+  fill: #03A9F4;
+}
+
+.btn2 .tooltiptext2 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn2 .tooltiptext2 .card {
+  width: 4em;
+  height: 4em;
+  background-color: white;
+}
+
+.btn2 .tooltiptext2 .account {
+  margin-top: 1em;
+}
+
+.btn2 .tooltiptext2 .username {
+  font-size: 0.6em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn2:hover .tooltiptext2 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn2:hover {
+  background-color: #03A9F4;
+}
+
+.btn2:hover .twitter {
+  fill: white;
+}
+
+.btn3 {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn3 .tooltiptext3 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn3 .tooltiptext3 .card {
+  width: 4em;
+  height: 4em;
+  background-color: white;
+}
+
+.btn3 .tooltiptext3 .account {
+  margin-top: 1em;
+}
+
+.btn3 .tooltiptext3 .username {
+  font-size: 0.7em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn3:hover .tooltiptext3 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn3:hover {
+  background-color: black;
+}
+
+.btn3:hover .git {
+  fill: white;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero{
+    margin: 0% 2%;
+  }
+} 

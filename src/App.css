@@ -1,0 +1,37 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #7562E0;
+  --secondary-color: #ffffff;
+
+  /* Background Colors */
+  --background-color: #1a1a29;
+  --accent-color-1: #BDBDBD;
+  --accent-color-2: #181824 ;
+}
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0% ;
+}
+body{
+  background-color: var(--background-color);
+  margin: 0% ;
+  padding: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+      margin: 0%;
+      padding: 0%;
+    }
+  }
+
+/* Media query for medium displays */
+@media screen and (max-width: 968px) {
+    
+  body{
+    margin: 0%;
+    padding: 0%;
+  }
+  
+}

@@ -1,0 +1,238 @@
+.pro{
+  margin: 3% 10%;
+  background-color: var(--background-color);
+  font-family: 'Poppins';
+}
+h1{
+  font-size:32px;
+  color: var(--primary-color);
+}
+
+p{
+  color: var(--secondary-color);
+  padding-top: 2rem;
+}
+
+.project img{
+  width: 300px;
+  border-radius: .5rem;
+
+}
+.project{
+  margin: 2rem 0rem;
+  padding: 1rem 1.5rem;
+  width: 360px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background-color: #31313F;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project h3{
+  padding-top: 1rem;
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.project p{
+  padding: 0.7rem 0rem ;
+}
+.Projects{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5%;
+  align-items: center;
+  justify-content: center;
+}
+
+ .buttons button:nth-child(odd) {
+  position: relative;
+  padding: 10px 22px;
+  margin-right: 20px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  transition: all 0.2s ease;
+}
+
+.buttons button:nth-child(odd):active {
+  transform: scale(0.96);
+}
+
+.buttons button:nth-child(odd):before,
+.buttons button:nth-child(odd):after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.buttons button:nth-child(odd):hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, var(--primary-color) 20%, transparent 30%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--primary-color) 15%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.buttons button:nth-child(odd):hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--primary-color) 15%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+
+
+.buttons button:nth-child(even) {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: 1px solid  var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  background-color: #31313F;
+  transition: all 0.2s ease;
+}
+
+.buttons button:nth-child(even):active {
+  transform: scale(0.96);
+}
+
+.buttons button:nth-child(even):before,
+.buttons button:nth-child(even):after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.buttons button:nth-child(even):hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, var(--primary-color) 20%, transparent 30%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--primary-color) 15%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.buttons button:nth-child(even):hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--primary-color) 15%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--primary-color) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
